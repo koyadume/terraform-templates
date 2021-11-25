@@ -17,7 +17,7 @@ resource "aws_subnet" "test-subnet" {
 }
 
 resource "aws_instance" "test-vm" {
-  ami = "ami-invalid"
+  ami = "ami-0d5075a2643fdf738"
   instance_type = "var.instance_size"
   subnet_id = aws_subnet.test-subnet.id
 }
